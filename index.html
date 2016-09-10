@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400i" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.amber-yellow.min.css" />
+    <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
+</head>
+
+<body>
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header">
+            <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title"><i class="fa fa-futbol-o" aria-hidden="true"></i> get /footy</span>
+                <!-- Add spacer, to align navigation to the right -->
+                <div class="mdl-layout-spacer"></div>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title"><i class="fa fa-futbol-o" aria-hidden="true"></i> get /footy</span>
+            <nav class="mdl-navigation">
+                <a id="show-dialog" class="mdl-navigation__link">what is this?</a>
+                <a class="mdl-navigation__link" href="">share</a>
+                <!-- Start Dialog Container -->
+                <dialog class="mdl-dialog">
+                    <h4 class="mdl-dialog__title">welcome to get /footy!</h4>
+                    <div class="mdl-dialog__content">
+                        <p>
+                            Allowing us to collect data will let us get you the information you want faster.
+                        </p>
+                    </div>
+                    <div class="mdl-dialog__actions">
+                        <button type="button" class="mdl-button close">ok, got it!</button>
+                    </div>
+                </dialog>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div class="page-content">
+                <!-- Your content goes here -->
+                <div class="mdl-grid">
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="mdl-grid team-left">
+                            <div class="mdl-cell mdl-cell--2-col team-col">
+                                <ul class="team-list">
+                                    <li>
+                                        <a id="tt1" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/286/large_theshortfuse.com.minimal.png" alt="Arsenal" class="logo-small"></a>
+                                        <span for="tt1" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Arsenal</span>
+                                    </li>
+                                    <li>
+                                        <a id="tt2" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/319/large_weaintgotnohistory.com.minimal.png" alt="Chelsea" class="logo-small selected"></a>
+                                        <span for="tt2" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Chelsea</span>
+                                    </li>
+                                    <li>
+                                        <a id="tt3" class="team-selector"><img src="https://cdn2.vox-cdn.com/uploads/chorus_asset/file/6915629/fosseposse.0.png" alt="Leicester" class="logo-small"></a>
+                                        <span for="tt3" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Leicester City</span>
+                                    </li>
+                                    <li>
+                                        <a id="tt4" class="team-selector"><img src="https://cdn2.vox-cdn.com/uploads/blog/sbnu_logo_minimal/373/large_liverpool.theoffside.com.minimal.png" alt="Liverpool" class="logo-small">
+                                            <span for="tt4" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Liverpool</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="tt5" class="team-selector"><img src="https://cdn0.vox-cdn.com/uploads/blog/sbnu_logo_minimal/194/large_bitterandblue.com.minimal.png" alt="Manchester City" class="logo-small">
+                                            <span for="tt5" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Manchester City</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a id="tt6" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/277/large_thebusbybabe.com.minimal.png" alt="Manchester United" class="logo-small">
+                                            <span for="tt6" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Manchester United</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col team-stats">
+                                <div class="team-info-top">
+                                    <span class="nickname">The Gunners</span>
+                                    <span class="founded">Est. 1886</span>
+                                    <p>Arsenal was the first club from the South of England to join The Football League, in 1893. They entered the First Division in 1904, and have since accumulated the second most points. Relegated only once, in 1913, they continue the longest streak in the top division. In the 1930s, Arsenal won five League Championships and two FA Cups, and another FA Cup and two Championships after the war. In 1970–71, they won their first League and FA Cup Double. Between 1989 and 2005, they won five League titles and five FA Cups, including two more Doubles. They completed the 20th century with the highest average league position.<sup><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." class="cite" target="_blank">[wikipedia]</a></sup></p>
+                                </div>
+                                <div class="team-bottom-loading">
+                                    <p>Retreiving Team Data...<get/p>
+                                    <span class="mdl-spinner mdl-js-spinner mdl-spinner--single-color is-active"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-cell mdl-cell--6-col">
+                        <div class="window right">
+                            <img class="logo-large" src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/286/large_theshortfuse.com.minimal.png" alt="">
+                            <p class="title">Arsenal F.C.</p>
+                            <p class="rank">rank: 1/20</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

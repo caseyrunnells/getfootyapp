@@ -1,0 +1,231 @@
+body {
+    background-image: url('https://hd.unsplash.com/photo-1439736637365-748f240b24fb');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.page-content {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.mdl-dialog {
+    width: 50%;
+}
+
+.mdl-grid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mdl-cell mdl-cell--6-col {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.left {
+    height: 100%
+}
+
+.team-left {
+    padding: 0 0;
+}
+
+.team-col {
+    width: 10%;
+    background-color: #262626;
+    margin: 0 0;
+}
+
+.team-list {
+    list-style: none;
+    padding: 0;
+}
+
+.team-list > li {
+    padding-left: 12%;
+}
+
+.mdl-tooltip {
+    background: rgb(13, 13, 13);
+}
+
+.team-stats {
+    background-color: #262626;
+    opacity: .7;
+    margin: 0 0;
+    padding: 15px;
+}
+
+.fa-futbol-o {
+    color: rgb (66, 66, 66);
+}
+
+.logo-large {
+    display: block;
+    margin: 0 auto;
+}
+
+.logo-small {
+    max-width: 85%;
+    height: auto;
+    margin: 10px auto;
+    opacity: 1;
+    -webkit-filter: grayscale(75%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(75%);
+}
+
+.logo-small:hover {
+    -webkit-filter: grayscale(0%);
+    /* Chrome, Safari, Opera */
+    filter: grayscale(0%);
+}
+
+.title,
+.rank {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+.title {
+    font-size: 40px;
+}
+
+.rank {
+    font-size: 32px;
+}
+
+.nickname {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.founded {
+    float: right;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+
+.team-info-top > p {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.cite {
+    color: #fff;
+    font-size: 8px;
+    text-decoration: none;
+}
+
+.club-social {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.club-social > li {
+    float: right;
+    margin-right: 10px;
+}
+
+.club-social > li > a {
+    display: block;
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.club-social > li > a:hover {
+    color: #0099ff;
+}
+
+.grounds {
+    float: left;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+}
+
+.grounds > a {
+    color: #fff;
+    font-size: 1.3em;
+    text-decoration: none;
+}
+
+.grounds a:hover {
+    color: #0099ff;
+}
+
+.team-bottom-content {
+    clear: both;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.point-value {
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 75px;
+    margin: 15% auto;
+}
+
+.print-table {
+    display: table;
+    margin: 0 auto;
+}
+
+.record-heading {
+    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 27px;
+}
+
+.record-heading > li {
+    float: left;
+    margin: 20px;
+    line-height: 2;
+}
+
+.team-bottom-loading {
+    display: none;
+    text-align: center;
+}
+
+.team-bottom-loading > p {
+    color: rgb(255, 152, 0);
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 25%;
+}
