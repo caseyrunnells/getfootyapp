@@ -1,4 +1,4 @@
-var dialog = $('.mdl-dialog');
+var dialog = document.querySelector('dialog');
 var showDialogButton = document.querySelector('#show-dialog');
 
 $(function(){
