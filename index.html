@@ -21,6 +21,33 @@
                 <span class="mdl-layout-title"><i class="fa fa-futbol-o" aria-hidden="true"></i> get /footy</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
+              <nav class="mdl-navigation mdl-layout--large-screen-only">
+
+                                        <a id="tt1" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/286/large_theshortfuse.com.minimal.png" alt="Arsenal" class="logo-small"></a>
+                                        <span for="tt1" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Arsenal</span>
+
+                                        <a id="tt2" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/319/large_weaintgotnohistory.com.minimal.png" alt="Chelsea" class="logo-small selected"></a>
+                                        <span for="tt2" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Chelsea</span>
+
+                                        <a id="tt3" class="team-selector"><img src="https://cdn2.vox-cdn.com/uploads/chorus_asset/file/6915629/fosseposse.0.png" alt="Leicester" class="logo-small"></a>
+                                        <span for="tt3" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Leicester City</span>
+
+                                        <a id="tt4" class="team-selector"><img src="https://cdn2.vox-cdn.com/uploads/blog/sbnu_logo_minimal/373/large_liverpool.theoffside.com.minimal.png" alt="Liverpool" class="logo-small">
+                                            <span for="tt4" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Liverpool</span>
+                                        </a>
+
+                                        <a id="tt5" class="team-selector"><img src="https://cdn0.vox-cdn.com/uploads/blog/sbnu_logo_minimal/194/large_bitterandblue.com.minimal.png" alt="Manchester City" class="logo-small">
+                                            <span for="tt5" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Manchester City</span>
+                                        </a>
+
+                                        <a id="tt6" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/277/large_thebusbybabe.com.minimal.png" alt="Manchester United" class="logo-small">
+                                            <span for="tt6" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Manchester United</span>
+                                        </a>
+                 <label for="switch1" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
+  <input type="checkbox" id="switch1" class="mdl-switch__input">
+  <span class="mdl-switch__label">sound off/on</span>
+</label>
+      </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer">
@@ -30,10 +57,10 @@
                 <a class="mdl-navigation__link" href="">share</a>
                 <!-- Start Dialog Container -->
                 <dialog class="mdl-dialog">
-                    <h4 class="mdl-dialog__title">welcome to get /footy!</h4>
+                    <h4 class="mdl-dialog__title">Welcome to get /footy!</h4>
                     <div class="mdl-dialog__content">
                         <p>
-                            Allowing us to collect data will let us get you the information you want faster.
+                            This is a quick
                         </p>
                     </div>
                     <div class="mdl-dialog__actions">
@@ -79,24 +106,44 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="mdl-cell mdl-cell--4-col team-stats">
+                            <div class="mdl-cell mdl-cell--6-col team-stats">
                                 <div class="team-info-top">
                                     <span class="nickname">The Gunners</span>
                                     <span class="founded">Est. 1886</span>
                                     <p>Arsenal was the first club from the South of England to join The Football League, in 1893. They entered the First Division in 1904, and have since accumulated the second most points. Relegated only once, in 1913, they continue the longest streak in the top division. In the 1930s, Arsenal won five League Championships and two FA Cups, and another FA Cup and two Championships after the war. In 1970–71, they won their first League and FA Cup Double. Between 1989 and 2005, they won five League titles and five FA Cups, including two more Doubles. They completed the 20th century with the highest average league position.<sup><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." class="cite" target="_blank">[wikipedia]</a></sup></p>
+                                  <ul class="club-social">
+                                    <li><a class="fa fa-twitter" href="https://twitter.com/Arsenal" target="_blank"  aria-hidden="true"></a></li>
+                                    <li><a class="fa fa-globe" href="http://www.arsenal.com/home" target="_blank" aria-hidden="true"></a></li>
+                                  </ul>
+                                   <span class="grounds"><a href="https://goo.gl/maps/k4CSxDuqveG2" target="_blank">Emirates Stadium <i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
                                 </div>
                                 <div class="team-bottom-loading">
-                                    <p>Retreiving Team Data...<get/p>
+                                    <p>Retreiving Club Data...</p>
                                     <span class="mdl-spinner mdl-js-spinner mdl-spinner--single-color is-active"></span>
+                                </div>
+                                <div class="team-bottom-content">
+
+                                  <p class="point-value"><span>4pts</span></p>
+                                  <p class="rank">rank: 1/20</p>
+
+                                  <div class="print-record-table">
+                                  <ul class="record-heading">
+                            <li><span id="ttw">W</span><br><span class="print-record print-win">1</span></li>
+                            <li><span id="ttd">D</span><br><span class="print-record print-draw">3</span></li>
+                            <li><span id="ttl">L</span><br><span class="print-record print-loss">2</span></li>
+                          </ul>
+                                      <span for="ttw" class="mdl-tooltip mdl-tooltip--large">total number of wins this season</span>
+                                      <span for="ttd" class="mdl-tooltip mdl-tooltip--large">total number of draws this season</span>
+                                      <span for="ttl" class="mdl-tooltip mdl-tooltip--large">total number of losses this season</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--6-col">
                         <div class="window right">
-                            <img class="logo-large" src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/286/large_theshortfuse.com.minimal.png" alt="">
+                          <img class="logo-large" src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/286/large_theshortfuse.com.minimal.png" alt="">
                             <p class="title">Arsenal F.C.</p>
-                            <p class="rank">rank: 1/20</p>
                         </div>
                     </div>
                 </div>

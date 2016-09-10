@@ -33,6 +33,15 @@ body {
     right: 0;
 }
 
+.mdl-layout__header-row {
+    padding: 0 0px 0 80px;
+}
+
+.mdl-layout--large-screen-only {
+    background-color: #262626;
+    padding-right: 3%!important;
+}
+
 .left {
     height: 100%
 }
@@ -42,6 +51,7 @@ body {
 }
 
 .team-col {
+    display: none;
     width: 10%;
     background-color: #262626;
     margin: 0 0;
@@ -64,7 +74,7 @@ body {
     background-color: #262626;
     opacity: .7;
     margin: 0 0;
-    padding: 15px;
+    padding: 25px;
 }
 
 .fa-futbol-o {
@@ -73,17 +83,16 @@ body {
 
 .logo-large {
     display: block;
-    margin: 0 auto;
+    margin: 15% auto 0 auto;
 }
 
 .logo-small {
-    max-width: 85%;
-    height: auto;
-    margin: 10px auto;
+    height: 60px;
+    margin: 0 auto;
     opacity: 1;
-    -webkit-filter: grayscale(75%);
+    -webkit-filter: grayscale(100%);
     /* Chrome, Safari, Opera */
-    filter: grayscale(75%);
+    filter: grayscale(100%);
 }
 
 .logo-small:hover {
@@ -180,6 +189,19 @@ body {
     color: #0099ff;
 }
 
+.team-bottom-loading {
+    display: none;
+    text-align: center;
+}
+
+.team-bottom-loading > p {
+    color: rgb(255, 152, 0);
+    text-shadow: 2px 2px #000;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 20px;
+    margin-top: 25%;
+}
+
 .team-bottom-content {
     clear: both;
     text-align: center;
@@ -191,10 +213,11 @@ body {
     text-shadow: 2px 2px #000;
     font-family: 'Noto Sans', sans-serif;
     font-size: 75px;
-    margin: 15% auto;
+    margin: 15% auto 8% auto;
 }
 
-.print-table {
+
+.print-record-table {
     display: table;
     margin: 0 auto;
 }
@@ -215,17 +238,4 @@ body {
     float: left;
     margin: 20px;
     line-height: 2;
-}
-
-.team-bottom-loading {
-    display: none;
-    text-align: center;
-}
-
-.team-bottom-loading > p {
-    color: rgb(255, 152, 0);
-    text-shadow: 2px 2px #000;
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 20px;
-    margin-top: 25%;
 }
