@@ -133,12 +133,16 @@ body {
     font-size: 15px;
 }
 
-.team-info-top > p {
+.team-info > p {
     color: #fff;
     text-shadow: 2px 2px #000;
     font-family: 'Noto Sans', sans-serif;
     text-align: justify;
     font-size: 12px;
+}
+
+.team-chelsea,.team-leicester,.team-liverpool,.team-city,.team-united{
+  display: none;
 }
 
 .cite {
