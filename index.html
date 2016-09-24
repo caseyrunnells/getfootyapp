@@ -16,10 +16,9 @@
 
 
     <!-- Scripts -->
-    <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
     <script defer src="https://code.getmdl.io/1.2.0/material.min.js"></script>
     <script src="./app.js"></script>
-
 </head>
 
 <body>
@@ -31,33 +30,29 @@
                 <span class="mdl-layout-title"><i class="fa fa-futbol-o" aria-hidden="true"></i> get /footy</span>
                 <!-- Add spacer, to align navigation to the right -->
                 <div class="mdl-layout-spacer"></div>
-              <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <nav id="top-nav" class="mdl-navigation mdl-layout--large-screen-only">
 
-                                        <a id="tt1" class="team-selector"><img src="./img/arsenal-logo.png" alt="Arsenal" class="logo-small"></a>
-                                        <span for="tt1" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Arsenal</span>
+                    <a id="tt1" class="team-selector current-team" data-team="Arsenal"><img src="./img/arsenal-logo.png" alt="Arsenal" class="logo-small"></a>
+                    <span for="tt1" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Arsenal</span>
 
-                                        <a id="tt2" class="team-selector"><img src="./img/chelsea-logo.png" alt="Chelsea" class="logo-small selected"></a>
-                                        <span for="tt2" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Chelsea</span>
+                    <a id="tt2" class="team-selector" data-team="Chelsea"><img src="./img/chelsea-logo.png" alt="Chelsea" class="logo-small selected"></a>
+                    <span for="tt2" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Chelsea</span>
 
-                                        <a id="tt3" class="team-selector"><img src="./img/leicester-logo.png" alt="Leicester" class="logo-small"></a>
-                                        <span for="tt3" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Leicester City</span>
+                    <a id="tt3" class="team-selector" data-team="Leicester City"><img src="./img/leicester-logo.png" alt="Leicester" class="logo-small"></a>
+                    <span for="tt3" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Leicester City</span>
 
-                                        <a id="tt4" class="team-selector"><img src="./img/liverpool-logo.png" alt="Liverpool" class="logo-small">
-                                            <span for="tt4" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Liverpool</span>
-                                        </a>
+                    <a id="tt4" class="team-selector" data-team="Liverpool"><img src="./img/liverpool-logo.png" alt="Liverpool" class="logo-small">
+                        <span for="tt4" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Liverpool</span>
+                    </a>
 
-                                        <a id="tt5" class="team-selector"><img src="./img/city-logo.png" alt="Manchester City" class="logo-small">
-                                            <span for="tt5" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Manchester City</span>
-                                        </a>
+                    <a id="tt5" class="team-selector" data-team="Man City"><img src="./img/city-logo.png" alt="Manchester City" class="logo-small">
+                        <span for="tt5" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Manchester City</span>
+                    </a>
 
-                                        <a id="tt6" class="team-selector"><img src="./img/united-logo.png" alt="Manchester United" class="logo-small">
-                                            <span for="tt6" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Manchester United</span>
-                                        </a>
-                 <label for="switch1" class="mdl-switch mdl-js-switch mdl-js-ripple-effect">
-  <input type="checkbox" id="switch1" class="mdl-switch__input">
-  <span class="mdl-switch__label">sound off/on</span>
-</label>
-      </nav>
+                    <a id="tt6" class="team-selector" data-team="Man United"><img src="./img/united-logo.png" alt="Manchester United" class="logo-small">
+                        <span for="tt6" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--botttom">Manchester United</span>
+                    </a>
+                </nav>
             </div>
         </header>
         <div class="mdl-layout__drawer">
@@ -85,126 +80,46 @@
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--6-col">
                         <div class="mdl-grid team-left">
-                            <div class="mdl-cell mdl-cell--2-col team-col">
-                                <ul class="team-list">
-                                    <li>
-                                        <a id="tt1" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/286/large_theshortfuse.com.minimal.png" alt="Arsenal" class="logo-small"></a>
-                                        <span for="tt1" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Arsenal</span>
-                                    </li>
-                                    <li>
-                                        <a id="tt2" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/319/large_weaintgotnohistory.com.minimal.png" alt="Chelsea" class="logo-small selected"></a>
-                                        <span for="tt2" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Chelsea</span>
-                                    </li>
-                                    <li>
-                                        <a id="tt3" class="team-selector"><img src="https://cdn2.vox-cdn.com/uploads/chorus_asset/file/6915629/fosseposse.0.png" alt="Leicester" class="logo-small"></a>
-                                        <span for="tt3" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Leicester City</span>
-                                    </li>
-                                    <li>
-                                        <a id="tt4" class="team-selector"><img src="https://cdn2.vox-cdn.com/uploads/blog/sbnu_logo_minimal/373/large_liverpool.theoffside.com.minimal.png" alt="Liverpool" class="logo-small">
-                                            <span for="tt4" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Liverpool</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a id="tt5" class="team-selector"><img src="https://cdn0.vox-cdn.com/uploads/blog/sbnu_logo_minimal/194/large_bitterandblue.com.minimal.png" alt="Manchester City" class="logo-small">
-                                            <span for="tt5" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Manchester City</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a id="tt6" class="team-selector"><img src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/277/large_thebusbybabe.com.minimal.png" alt="Manchester United" class="logo-small">
-                                            <span for="tt6" class="mdl-tooltip mdl-tooltip--large mdl-tooltip--right">Manchester United</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                             <div class="mdl-cell mdl-cell--6-col team-stats">
-                              <div class="team-info team-arsenal">
-                                  <span class="nickname">The Gunners</span>
-                                  <span class="founded">Est. 1886</span>
-                                  <p>Arsenal was the first club from the South of England to join The Football League, in 1893. They entered the First Division in 1904, and have since accumulated the second most points. Relegated only once, in 1913, they continue the longest streak in the top division. In the 1930s, Arsenal won five League Championships and two FA Cups, and another FA Cup and two Championships after the war. In 1970–71, they won their first League and FA Cup Double. Between 1989 and 2005, they won five League titles and five FA Cups, including two more Doubles. They completed the 20th century with the highest average league position.<sup><a href="https://en.wikipedia.org/wiki/Arsenal_F.C." class="cite" target="_blank">[wikipedia]</a></sup></p>
-                                <ul class="club-social">
-                                  <li><a class="fa fa-twitter" href="https://twitter.com/Arsenal" target="_blank"  aria-hidden="true"></a></li>
-                                  <li><a class="fa fa-globe" href="http://www.arsenal.com/home" target="_blank" aria-hidden="true"></a></li>
-                                </ul>
-                                 <span class="grounds"><a href="https://goo.gl/maps/k4CSxDuqveG2" target="_blank">Emirates Stadium <i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
-                              </div>
-                              <!-- End Arsenal -->
-                              <div class="team-info team-chelsea">
-                                  <span class="nickname">The Blues</span>
-                                  <span class="founded">Est. 1905</span>
-                                  <p>Chelsea had their first major success in 1955, when they won the league championship. They then won various cup competitions between 1965 and 1996. The club's greatest period of success has come during the last two decades; winning 17 major trophies, and 21 in total, since 1997.[5] Chelsea have won five national league titles, seven FA Cups, five League Cups and four FA Community Shields, one UEFA Champions League, two UEFA Cup Winners' Cups, one UEFA Europa League and one UEFA Super Cup.<sup><a href="https://en.wikipedia.org/wiki/Chelsea_F.C." class="cite" target="_blank">[wikipedia]</a></sup></p>
-                                <ul class="club-social">
-                                  <li><a class="fa fa-twitter" href="https://twitter.com/chelseafc" target="_blank"  aria-hidden="true"></a></li>
-                                  <li><a class="fa fa-globe" href="https://www.chelseafc.com/" target="_blank" aria-hidden="true"></a></li>
-                                </ul>
-                                 <span class="grounds"><a href="https://goo.gl/maps/2ZDUMZ1NeP12" target="_blank">Stamford Bridge <i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
-                              </div>
-                              <!-- End Chelsea -->
-                              <div class="team-info team-leicester">
-                                  <span class="nickname">The Foxes</span>
-                                  <span class="founded">Est. 1884</span>
-                                  <p>Leicester won the 2015–16 Premier League, their first top-level football championship. A number of newspapers have described it as the greatest sporting upset ever: multiple bookmakers had never paid out at such long odds for any sport. Their previous highest ever finish was second place in the top flight, in Division One in 1928–29. Throughout Leicester's history, they have spent all but one season within the top two tiers of English football. The club holds a joint-highest seven second-tier titles (six Second Division and one Championship).<sup><a href="https://en.wikipedia.org/wiki/Leicester_City_F.C." class="cite" target="_blank">[wikipedia]</a></sup></p>
-                                <ul class="club-social">
-                                  <li><a class="fa fa-twitter" href="https://twitter.com/lcfc" target="_blank"  aria-hidden="true"></a></li>
-                                  <li><a class="fa fa-globe" href="http://www.lcfc.com/" target="_blank" aria-hidden="true"></a></li>
-                                </ul>
-                                 <span class="grounds"><a href="https://goo.gl/maps/TR61citdGf72" target="_blank">King Power Stadium <i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
-                              </div>
-                              <!-- End Leicester -->
-                              <div class="team-info team-liverpool">
-                                  <span class="nickname">The Reds</span>
-                                  <span class="founded">Est. 1892</span>
-                                  <p>Liverpool F.C. was founded in 1892 and joined the Football League the following year. The club has played at Anfield since its formation and has won five European Cups, three UEFA Cups, three UEFA Super Cups, 18 League titles, seven FA Cups, a record eight League Cups, and 15 FA Community Shields. Liverpool was the ninth highest-earning football club in the world for 2014–15, with an annual revenue of €391 million, and the world's eighth most valuable football club in 2016, valued at $1,550 million. The club holds many long-standing rivalries, most notably the North West Derby against Manchester United and the Merseyside derby with Everton.<sup><a href="https://en.wikipedia.org/wiki/Liverpool_F.C." class="cite" target="_blank">[wikipedia]</a></sup></p>
-                                <ul class="club-social">
-                                  <li><a class="fa fa-twitter" href="https://twitter.com/LFC" target="_blank"  aria-hidden="true"></a></li>
-                                  <li><a class="fa fa-globe" href="http://www.liverpoolfc.com/" target="_blank" aria-hidden="true"></a></li>
-                                </ul>
-                                 <span class="grounds"><a href="https://goo.gl/maps/Q9pAHDFygKo" target="_blank">Anfield <i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
-                              </div>
-                              <!-- End Liverpool -->
-                              <div class="team-info team-city">
-                                  <span class="nickname">City</span>
-                                  <span class="founded">Est. 1880</span>
-                                  <p>The club's most successful period was in the late 1960s and early 1970s when they won the League Championship, FA Cup, League Cup and European Cup Winners' Cup under the management team of Joe Mercer and Malcolm Allison. By 2014–15, Manchester City had the sixth-highest revenue in the footballing world with an annual revenue of €463.5 million. In 2016, Forbes magazine estimated they were the world's sixth most valuable football club, worth $1.92 billion.</p><sup><a href="https://en.wikipedia.org/wiki/Manchester_City_F.C." class="cite" target="_blank">[wikipedia]</a></sup></p>
-                                <ul class="club-social">
-                                  <li><a class="fa fa-twitter" href="https://twitter.com/mancity" target="_blank"  aria-hidden="true"></a></li>
-                                  <li><a class="fa fa-globe" href="http://www.mancity.com/" target="_blank" aria-hidden="true"></a></li>
-                                </ul>
-                                 <span class="grounds"><a href="https://goo.gl/maps/6Yw8LAWLdpo" target="_blank">Etihad Stadium <i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
-                              </div>
-                              <!-- End Man City -->
-                              <div class="team-info team-united">
-                                  <span class="nickname">The Red Devils</span>
-                                  <span class="founded">Est. 1878</span>
-                                  <p>Manchester United have won a record 20 league titles, a joint-record 12 FA Cups, four League Cups and a record 21 FA Community Shields. The club has also won three European Cups, one UEFA Cup Winners' Cup, one UEFA Super Cup, one Intercontinental Cup and one FIFA Club World Cup. In 1998–99, the club became the first in the history of English football to achieve the treble of the Premier League, the FA Cup and the UEFA Champions League. Manchester United was the second highest-earning football club in the world for 2013–14, with an annual revenue of €518 million, and the world's third most valuable football club in 2015, valued at $1.98 billion. As of June 2015, it is the world's most valuable football brand, estimated to be worth $1.2 billion.<sup><a href="https://en.wikipedia.org/wiki/Manchester_United_F.C." class="cite" target="_blank">[wikipedia]</a></sup></p>
-                                <ul class="club-social">
-                                  <li><a class="fa fa-twitter" href="https://twitter.com/ManUtd" target="_blank"  aria-hidden="true"></a></li>
-                                  <li><a class="fa fa-globe" href="http://www.manutd.com/" target="_blank" aria-hidden="true"></a></li>
-                                </ul>
-                                 <span class="grounds"><a href="https://goo.gl/maps/R8hGdLo2ThK2" target="_blank">Old Trafford <i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
-                              </div>
-                              <!-- End Man United -->
-                                <div class="team-bottom-content">
+                                <div class="team-info team-arsenal">
+                                    <div class="team-top-content">
+                                        <span class="nickname"></span>
+                                        <span class="founded"></span>
+                                        <p class="summary"><sup><a href="" class="cite" target="_blank">[wikipedia]</a></sup></p>
+                                        <ul class="club-social">
+                                            <li>
+                                                <a class="fa fa-twitter" href="" target="_blank" aria-hidden="true"></a>
+                                            </li>
+                                            <li>
+                                                <a class="fa fa-globe" href="" target="_blank" aria-hidden="true"></a>
+                                            </li>
+                                        </ul>
+                                        <span class="grounds"><a href="" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a></span>
+                                    </div>
+                                    <div class="team-bottom-content">
 
-                                  <p class="point-value"><span>4pts</span></p>
-                                  <p class="rank">rank: 1/20</p>
+                                        <p class="point-value"><span class="print-points"></span>pts</p>
+                                        <p class="rank">rank: <span class="print-rank"></span>/20</p>
 
-                                  <div class="print-record-table">
-                                  <ul class="record-heading">
-                            <li><span id="ttw">W</span><br><span class="print-record print-win">1</span></li>
-                            <li><span id="ttd">D</span><br><span class="print-record print-draw">3</span></li>
-                            <li><span id="ttl">L</span><br><span class="print-record print-loss">2</span></li>
-                          </ul>
-                                      <span for="ttw" class="mdl-tooltip mdl-tooltip--large">total number of wins this season</span>
-                                      <span for="ttd" class="mdl-tooltip mdl-tooltip--large">total number of draws this season</span>
-                                      <span for="ttl" class="mdl-tooltip mdl-tooltip--large">total number of losses this season</span>
+                                        <div class="print-record-table">
+                                            <ul class="record-heading">
+                                                <li><span id="ttw">W</span><br><span class="print-record print-win"></span></li>
+                                                <li><span id="ttd">D</span><br><span class="print-record print-draw"></span></li>
+                                                <li><span id="ttl">L</span><br><span class="print-record print-loss"></span></li>
+                                            </ul>
+                                            <span for="ttw" class="mdl-tooltip mdl-tooltip--large">total number of wins this season</span>
+                                            <span for="ttd" class="mdl-tooltip mdl-tooltip--large">total number of draws this season</span>
+                                            <span for="ttl" class="mdl-tooltip mdl-tooltip--large">total number of losses this season</span>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- End Arsenal -->
                             </div>
                         </div>
                     </div>
                     <div class="mdl-cell mdl-cell--6-col">
                         <div class="window right">
-                          <img class="logo-large" src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/286/large_theshortfuse.com.minimal.png" alt="">
+                            <img class="logo-large" src="https://cdn1.vox-cdn.com/uploads/blog/sbnu_logo_minimal/286/large_theshortfuse.com.minimal.png" alt="">
                             <p class="title">Arsenal F.C.</p>
                         </div>
                     </div>
