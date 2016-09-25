@@ -77,8 +77,8 @@ body {
 .team-stats {
     background-color: #262626;
     opacity: .7;
-    margin: 0 0;
     padding: 25px;
+    min-height: 700px;
 }
 
 .fa-futbol-o {
